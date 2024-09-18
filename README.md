@@ -48,6 +48,21 @@ return [
 2) Criar um usuario pra ter acesso :
  - Execute o arqui "inserir_usuario.sh" e siga as instruções
 
+Autenticação
+
+Post:
+web/auth/login
+
+Body:
+{
+    "username": "username",
+    "password": "senha"
+}
+
+vai retornar um token, esse token precisa ser enviado no hearder das requisições pra ser autorizado.
+
+Authorization: Bearer token
+
 
 Clientes:
 =====================================
