@@ -12,19 +12,21 @@ PHP Version 8.3.11
 mysqlnd 8.3.11
 
 
-INSTALLATION
+Instalação
 ------------
+pra iniciar a aplicação
 
-### Install via Composer
+Em um terminal, siga até a pasta que esta sua instalação e digite:
 
-~~~
-composer create-project --prefer-dist yiisoft/yii2-app-basic basic
+php yii serve
 
-~~~
-http://localhost/web/
+caso queira escolher a porta:
 
+php yii serve --port=8000
 
-CONFIGURATION
+http://localhost:8000
+
+Configuração
 -------------
 
 ### Database
@@ -51,7 +53,7 @@ return [
 Autenticação
 
 Post:
-web/auth/login
+/auth/login
 
 Body:
 {
@@ -70,7 +72,7 @@ Clientes:
  Inserir:
 
 POST
-/web/clientes
+/clientes
 
 body:
 {    
@@ -90,12 +92,12 @@ body:
 
 Lista
 GET
-/web/cliente/1
+/cliente/1
 
 Lista esse cliente especificamente.
 
 GET
-/web/clientes
+/clientes
 
 Lista todos os clientes
 
@@ -119,7 +121,7 @@ A ordenação pode ser feita com qualquer campo o filtro apenas com nome e cpf
 
  Editar
  PUT
- /web/clientes
+ /clientes
 
  body:
 {    
@@ -140,7 +142,7 @@ A ordenação pode ser feita com qualquer campo o filtro apenas com nome e cpf
  Deletar
 
  DELETE
- /web/clientes
+ /clientes
 
  body:
 {   
@@ -155,7 +157,7 @@ A ordenação pode ser feita com qualquer campo o filtro apenas com nome e cpf
  Inserir:
 
 POST
-/web/livros
+/livros
 
 body:
 {    
@@ -178,12 +180,12 @@ Se a "isDadosSite" for false todo o preechimento será manual
 
 Lista
 GET
-/web/livros/1 ou isbn
+/livros/1 ou isbn
 
 Lista esse livro especificamente.
 
 GET
-/web/livros
+/livros
 
 Lista todos os livros
 
@@ -209,7 +211,7 @@ A ordenação pode ser feita com qualquer campo o filtro apenas com title e isbn
 
  Editar
  PUT
- /web/livros
+ /livros
 
  body:
 {    
@@ -229,7 +231,7 @@ A ordenação pode ser feita com qualquer campo o filtro apenas com title e isbn
  Deletar
 
  DELETE
- /web/livros
+ /livros
 
  body:
 {   
